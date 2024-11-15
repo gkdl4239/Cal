@@ -10,9 +10,12 @@ public class App {
         Calculator2<Integer, Double> cal2;
         Calculator2<Double, Integer> cal3;
         Calculator2<Double, Double> cal4;
+        OperatorType op;
+
         Results results = new Results();
         String delete;
         String menu;
+        Number result = 0;
 
         while(true) {
             while(true) {
@@ -36,20 +39,22 @@ public class App {
                     }
 
                     char operator = sign.charAt(0);
-                    Number result = 0;
-                    OperatorType op;
+
                     if (num1 instanceof Integer && num2 instanceof Integer) {
                         cal1 = new Calculator2<>((Integer)num1,(Integer)num2);
                         op = OperatorType.fromSymbol(operator);
                         result = cal1.calculate(op);
+
                     } else if (num1 instanceof Integer && num2 instanceof Double) {
                         cal2 = new Calculator2<>((Integer)num1,(Double)num2);
                         op = OperatorType.fromSymbol(operator);
                         result = cal2.calculate(op);
+
                     } else if (num1 instanceof Double && num2 instanceof Integer) {
                         cal3 = new Calculator2<>((Double)num1,(Integer)num2);
                         op = OperatorType.fromSymbol(operator);
                         result = cal3.calculate(op);
+
                     } else if (num1 instanceof Double && num2 instanceof Double) {
                         cal4 = new Calculator2<>((Double)num1,(Double)num2);
                         op = OperatorType.fromSymbol(operator);

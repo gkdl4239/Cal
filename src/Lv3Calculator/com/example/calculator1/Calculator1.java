@@ -16,6 +16,11 @@ public class Calculator1 {
                 int first = sc.nextInt();
                 System.out.println("두번째 수를 입력하세요");
                 int second = sc.nextInt();
+                if(first <0 || second < 0){
+                    System.out.print("양의 정수만 입력해주세요!");
+                    continue;
+                }
+
                 System.out.println("+,-,*,/ 중 연산자 하나를 입력하세요");
                 String operator = sc.next();
                 char sign = operator.charAt(0);
