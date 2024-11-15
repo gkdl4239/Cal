@@ -20,17 +20,21 @@ public class App {
                 System.out.println("1.계산 2.조회 3.삭제 4.종료");
                 menu = sc.next();
 
-
                 //계산
                 if (menu.equals("1")) {
                     System.out.print("첫 번째 숫자를 입력하세요:");
-                    delete = sc.next();
-                    Number num1 = Calculator2.parseNumber(delete);
+                    String input1 = sc.next();
+                    Number num1 = Calculator2.parseNumber(input1);
                     System.out.print("두 번째 숫자를 입력하세요:");
                     String input2 = sc.next();
                     Number num2 = Calculator2.parseNumber(input2);
                     System.out.print("사칙 연산 기호를 입력하세요:");
                     String sign = sc.next();
+                    if(input2.equals("0")&&sign.equals("/")){
+                        System.out.print("분모는 0이 될수 없습니다");
+                        continue;
+                    }
+
                     char operator = sign.charAt(0);
                     Number result = 0;
                     OperatorType op;
