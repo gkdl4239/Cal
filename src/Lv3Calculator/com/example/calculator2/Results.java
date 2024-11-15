@@ -6,10 +6,7 @@ import java.util.List;
 import java.util.Queue;
 
 public class Results {
-    private final Queue<Number> queue = new LinkedList();
-
-    public Results() {
-    }
+    private final Queue<Number> queue = new LinkedList<>();
 
     public void setQueue(Number result) {
         this.queue.add(result);

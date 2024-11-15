@@ -16,17 +16,11 @@ public enum OperatorType {
         return this.symbol;
     }
 
-    public static OperatorType fromSymbol(char symbol) {
-        OperatorType[] var1 = values();
-        int var2 = var1.length;
-
-        for(int var3 = 0; var3 < var2; ++var3) {
-            OperatorType op = var1[var3];
-            if (op.getSymbol() == symbol) {
-                return op;
-            }
+    // 입력받은 연산자와 필드값을 비교해서 상수를 반환하는 메서드
+    public static OperatorType fromSymbol(char operator){
+        for(OperatorType op : OperatorType.values()){
+            if(op.getSymbol() == operator) return op;
         }
-
-        throw new IllegalArgumentException("지원하지 않는 연산자입니다: " + symbol);
+        throw new IllegalArgumentException("유효하지 않은 연산자입니다");
     }
 }
