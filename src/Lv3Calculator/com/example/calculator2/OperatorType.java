@@ -8,7 +8,7 @@ public enum OperatorType {
 
     private final char symbol;
 
-    private OperatorType(char symbol) {
+    OperatorType(char symbol) {
         this.symbol = symbol;
     }
 
