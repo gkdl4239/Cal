@@ -23,6 +23,7 @@ public class Results {
         return result;
     }
 
+    // 오래된 결과 삭제
     public void removeResult() {
         this.queue.poll();
     }

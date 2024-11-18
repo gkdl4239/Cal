@@ -8,7 +8,6 @@ public class App {
 
         while (true) {
             menu.displayMenu();
-            menu.userChoice();
         }
     }
 }
