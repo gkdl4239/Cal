@@ -1,4 +1,4 @@
-package Lv3Calculator.com.example.calculator2;
+package Lv3Calculator.com.example.calculator2.operation;
 
 public enum OperatorType {
     ADD('+'),

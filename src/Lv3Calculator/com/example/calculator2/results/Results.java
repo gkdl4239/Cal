@@ -1,4 +1,4 @@
-package Lv3Calculator.com.example.calculator2;
+package Lv3Calculator.com.example.calculator2.results;
 
 
 import java.util.LinkedList;
@@ -18,8 +18,9 @@ public class Results {
         Number rounded = 0;
         if (result instanceof Double) {
             rounded = Math.round(result.doubleValue() * 100000) / 100000.0;
+            return rounded;
         }
-        return rounded;
+        return result;
     }
 
     public void removeResult() {

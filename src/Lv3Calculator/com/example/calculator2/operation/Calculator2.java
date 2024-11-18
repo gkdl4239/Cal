@@ -1,4 +1,4 @@
-package Lv3Calculator.com.example.calculator2;
+package Lv3Calculator.com.example.calculator2.operation;
 
 
 public class Calculator2<T extends Number, U extends Number> {
