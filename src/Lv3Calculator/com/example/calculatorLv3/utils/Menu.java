@@ -1,4 +1,4 @@
-package Lv3Calculator.com.example.calculator2.utils;
+package Lv3Calculator.com.example.calculatorLv3.utils;
 import java.util.Scanner;
 
 public class Menu {

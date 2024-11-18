@@ -1,4 +1,4 @@
-package Lv3Calculator.com.example.calculator1;
+package Lv3Calculator.com.example.calculatorLv1;
 
 import java.util.Scanner;
 

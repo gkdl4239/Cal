@@ -1,6 +1,6 @@
-package Lv3Calculator.com.example.calculator2.utils;
-import Lv3Calculator.com.example.calculator2.operation.CalculatorService;
-import Lv3Calculator.com.example.calculator2.results.Results;
+package Lv3Calculator.com.example.calculatorLv3.utils;
+import Lv3Calculator.com.example.calculatorLv3.operation.CalculatorService;
+import Lv3Calculator.com.example.calculatorLv3.results.Results;
 
 import java.util.List;
 

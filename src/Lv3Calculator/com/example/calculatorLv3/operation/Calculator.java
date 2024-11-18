@@ -1,11 +1,11 @@
-package Lv3Calculator.com.example.calculator2.operation;
+package Lv3Calculator.com.example.calculatorLv3.operation;
 
 
-public class Calculator2<T extends Number, U extends Number> {
+public class Calculator<T extends Number, U extends Number> {
     private final T num1;
     private final U num2;
 
-    public Calculator2(T num1, U num2) {
+    public Calculator(T num1, U num2) {
         this.num1 = num1;
         this.num2 = num2;
     }
