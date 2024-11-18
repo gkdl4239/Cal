@@ -41,6 +41,7 @@ public class App {
 
                     char operator = sign.charAt(0);
 
+                    //각 입력에 따른 자료형 지정
                     if (num1 instanceof Integer && num2 instanceof Integer) {
                         cal1 = new Calculator2<>((Integer) num1, (Integer) num2);
                         op = OperatorType.fromSymbol(operator);
