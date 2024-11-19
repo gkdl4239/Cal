@@ -13,11 +13,11 @@ public class Results {
         this.queue.add(result);
     }
 
-    //부동 소수점 5자리까지 반올림하는 알고리즘
+    //부동 소수점 10자리까지 반올림하는 알고리즘
     public Number decimal(Number result) {
         Number rounded = 0;
         if (result instanceof Double) {
-            rounded = Math.round(result.doubleValue() * 100000) / 100000.0;
+            rounded = Math.round(result.doubleValue() * (1.0e+10)) / (1.0e+10);
             return rounded;
         }
         return result;
