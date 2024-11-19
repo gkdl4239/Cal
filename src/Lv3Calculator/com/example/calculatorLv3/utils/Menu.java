@@ -12,7 +12,7 @@ public class Menu {
         System.out.print("2. 조회 ");
         System.out.print("3. 삭제 ");
         System.out.print("4. 종료 ");
-        System.out.println("");
+        System.out.println();
         userChoice();
     }
 

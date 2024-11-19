@@ -34,10 +34,8 @@ public class MenuHandler {
     // 조회
     public void viewResults(){
         int std = input.getInputStd("기준값보다 큰 값들을 조회합니다 기준값을 입력해주세요:");
-        List big = results.getQueue(std);
-        big.forEach((i) -> {
-            System.out.print(" " + i);
-        });
+        List<Number> big = results.getQueue(std);
+        big.forEach((i) -> System.out.print(" " + i));
         System.out.println();
     }
 

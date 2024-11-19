@@ -14,6 +14,7 @@ public class CalculatorService {
         } else if (first instanceof Double && second instanceof Integer) {
             cal = new Calculator<>((Double) first, (Integer) second);
         } else {
+            assert first instanceof Double;
             cal = new Calculator<>((Double) first, (Double) second);
         }
 
