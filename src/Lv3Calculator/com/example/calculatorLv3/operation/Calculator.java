@@ -48,10 +48,10 @@ public class Calculator<T extends Number, U extends Number> {
     public static Number parseNumber(String Input) {
         try {
             return Integer.parseInt(Input);
-        } catch (NumberFormatException e1) {
+        } catch (NumberFormatException e1) {            // 정수가 아닐 시 실수 형변환
             try {
                 return Double.parseDouble(Input);
-            } catch (NumberFormatException e2) {
+            } catch (NumberFormatException e2) {        // 실수도 아닐 시 예외 처리
                 throw new IllegalArgumentException("숫자를 입력하지 않았습니다.");
             }
         }
