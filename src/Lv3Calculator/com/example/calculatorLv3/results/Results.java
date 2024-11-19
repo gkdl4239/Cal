@@ -28,7 +28,7 @@ public class Results {
     }
     
     // 결과값을 조회할때 각 자료형에 맞게 저장
-    public List getQueue(int std) {
+    public List<Number> getQueue(int std) {
         return this.queue.stream().filter((n) -> {
             if (n instanceof Integer) {
                 return (Integer)n > std;

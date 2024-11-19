@@ -44,7 +44,7 @@ public class Calculator<T extends Number, U extends Number> {
         };
     }
 
-    // 입력받은 연산자를 그에 맞게 형변환하는 메서드
+    // 입력 받은 연산자를 그에 맞게 형 변환 하는 메서드
     public static Number parseNumber(String Input) {
         try {
             return Integer.parseInt(Input);
